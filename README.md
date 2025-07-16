@@ -1,6 +1,6 @@
 # 📋 Calculator
 
-**[Перейти на веб-приложение](jquery-calculator-three.vercel.app)**
+**[Перейти на веб-приложение](https://jquery-calculator-three.vercel.app/)**
 
 ---
 
