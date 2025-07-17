@@ -12,6 +12,7 @@
     <main class="calculator">
       <div class="display" id="display">0</div>
       <div class="buttons">
+        <!-- кальклятор -->
         <button class="clear" id="clear">C</button>
         <button class="operator" id="backspace">←</button>
         <button class="operator" id="divide">÷</button>
@@ -45,8 +46,59 @@
         <button class="number" id="decimal">.</button>
         <button class="equals" id="equals">=</button>
       </div>
+      <!-- модальное окно -->
+      <div class="keyboard-hint-modal" id="keyboardHintModal">
+        <div class="modal-content">
+          <h3>Горячие клавиши калькулятора</h3>
+          <div class="keyboard-grid">
+            <div class="keyboard-row">
+              <div class="key">0-9</div>
+              <div class="description">Цифры</div>
+            </div>
+            <div class="keyboard-row">
+              <div class="key">+ - * /</div>
+              <div class="description">Основные операции</div>
+            </div>
+            <div class="keyboard-row">
+              <div class="key">Enter или =</div>
+              <div class="description">Вычислить</div>
+            </div>
+            <div class="keyboard-row">
+              <div class="key">Backspace</div>
+              <div class="description">Удалить символ</div>
+            </div>
+            <div class="keyboard-row">
+              <div class="key">Escape</div>
+              <div class="description">Очистить</div>
+            </div>
+            <div class="keyboard-row">
+              <div class="key">.</div>
+              <div class="description">Десятичная точка</div>
+            </div>
+            <div class="keyboard-row">
+              <div class="key">p</div>
+              <div class="description">Число π</div>
+            </div>
+            <div class="keyboard-row">
+              <div class="key">^</div>
+              <div class="description">Квадрат числа</div>
+            </div>
+            <div class="keyboard-row">
+              <div class="key">s</div>
+              <div class="description">Квадратный корень</div>
+            </div>
+            <div class="keyboard-row">
+              <div class="key">l</div>
+              <div class="description">Логарифм по основанию 10</div>
+            </div>
+          </div>
+          <label> <input type="checkbox" id="dontShowAgain" /> Больше не показывать </label>
+          <button id="closeModal">×</button>
+        </div>
+      </div>
     </main>
 
     <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/modal.js" defer></script>
   </body>
 </html>
