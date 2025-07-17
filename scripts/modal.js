@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 $(function () {
-  if (!localStorage.getItem("is_hint_show")) {
+  if (!localStorage.getItem("is_hint_show") && window.innerWidth >= 640) {
     $("#keyboardHintModal").fadeIn();
   }
 
